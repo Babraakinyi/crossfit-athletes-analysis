@@ -1,0 +1,10 @@
+# Ignore all CSV and Excel files inside /data
+data/*.csv
+data/*.xlsx
+
+# Ignore notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore Mac system files
+.DS_Store
+
