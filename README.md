@@ -1,8 +1,8 @@
-# CrossFit Athletes Performance Analysis
+# CrossFit Athlete Performance Prediction
 
 ## Project Overview
-This project analyzes a dataset of **CrossFit athletes** collected from competitions and training profiles worldwide.  
-The goal is to understand athlete characteristics (age, gender, body size, background, training habits) and link them to performance metrics (strength lifts, benchmark workouts).   
+This project analyzes a dataset of 423k CrossFit athletes collected from competitions and training profiles worldwide.  
+The goal is to explore and predict athletes strength performance, with a focus on deadlift weights, by understanding characteristics (age, gender, body size, background, training habits) and link them to performance metrics (strength lifts, benchmark workouts). 
 
 ---
 
@@ -25,43 +25,35 @@ crossfit-project/
 
 ---
 
-## Progress So Far
-- ✅ Set up project structure  
-- ✅ Data inspection (shape, columns, dtypes)  
-- ✅ Data consistency check (missingness, min/max values)  
-- 🔜 Define cleaning rules  
-- 🔜 Perform EDA  
-- 🔜 Build predictive models  
+### Workflow
+- **Data Cleaning & EDA**: Handled missing values, explored demographics, lifts, and WOD performance.  
+- **Feature Engineering**: Created strength ratios, total strength, and encoded categorical data.  
+- **Modeling**: Compared Linear Regression, Ridge, and Random Forest.  
+- **Best Model**: Random Forest Regressor (Test R² = **0.85**).  
 
 ---
 
-## Next Steps
-- Clean dataset (remove unrealistic values, handle missing values).  
-- Explore correlations between demographics, habits, and performance.  
-- Train regression models to predict **deadlift** and **back squat**.  
-- Evaluate model accuracy and feature importance.  
+### Key Insights
+- **Back squat** is the strongest predictor of deadlift.  
+- **Gender** plays a major role in strength outcomes.  
+- Random Forest captured relationships much better than linear models.
+
+### Prediction Example
+- Athlete 1 predicted deadlift: **373 lbs**  
+- Athlete 2 predicted deadlift: **259 lbs**
 
 ---
 
 ## Tech Stack
-- Python  
-- Pandas, NumPy  
-- Matplotlib, Seaborn  
-- Scikit-learn  
-- Jupyter Notebook  
-
----
-
-## Glossary
-- **WOD (Workout of the Day):** Standardized CrossFit workouts used worldwide.  
-- **Fran:** 21-15-9 thrusters & pull-ups (time).  
-- **Grace:** 30 clean & jerks (time).  
-- **Helen:** Run + kettlebell swings + pull-ups (time).  
-- **Filthy50:** 50 reps of 10 movements (time).  
-- **Deadlift, Back Squat, Snatch, C&J:** Strength lifts (weight in lbs).  
+- **Python** – Core programming language.  
+- **Pandas, NumPy** – Data cleaning, manipulation, and feature engineering.  
+- **Matplotlib, Seaborn** – Data visualization.  
+- **Scikit-learn** – Machine learning models (Linear Regression, Ridge, Random Forest) and preprocessing pipelines.  
+- **Jupyter Notebook** – Interactive development environment.  
+- **Git & GitHub** – Version control and project sharing.  
 
 ---
 
 ## License
 This project is for educational and research purposes.  
-Dataset belongs to its original creators/sources.  
+Dataset belongs to its original creators/sources.    
